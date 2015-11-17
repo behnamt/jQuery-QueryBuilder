@@ -249,26 +249,18 @@ QueryBuilder.DEFAULTS = {
     lang: {},
 
     operators: [
-        {type: 'equal',            nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
-        {type: 'not_equal',        nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
-        {type: 'in',               nb_inputs: 1, multiple: true,  apply_to: ['string', 'number', 'datetime']},
-        {type: 'not_in',           nb_inputs: 1, multiple: true,  apply_to: ['string', 'number', 'datetime']},
-        {type: 'less',             nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'less_or_equal',    nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'greater',          nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'greater_or_equal', nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'between',          nb_inputs: 2, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'not_between',      nb_inputs: 2, multiple: false, apply_to: ['number', 'datetime']},
-        {type: 'begins_with',      nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'not_begins_with',  nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'contains',         nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'not_contains',     nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'ends_with',        nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'not_ends_with',    nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'is_empty',         nb_inputs: 0, multiple: false, apply_to: ['string']},
-        {type: 'is_not_empty',     nb_inputs: 0, multiple: false, apply_to: ['string']},
-        {type: 'is_null',          nb_inputs: 0, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
-        {type: 'is_not_null',      nb_inputs: 0, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']}
+        {type: 'EQUALS',            nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
+        {type: 'NOT_EQUALS',        nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
+        {type: 'LESS',             nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
+        {type: 'LESS_EQUALS',    nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
+        {type: 'GREATER',          nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
+        {type: 'GREATER_EQUALS', nb_inputs: 1, multiple: false, apply_to: ['number', 'datetime']},
+        {type: 'CONTAINS',         nb_inputs: 1, multiple: false, apply_to: ['string']},
+        {type: 'NOT_CONTAINS',     nb_inputs: 1, multiple: false, apply_to: ['string']},
+        {type: 'CONTAINS_PHRASE',        nb_inputs: 1, multiple: false, apply_to: ['string']},
+        {type: 'NOT_CONTAINS_PHRASE',    nb_inputs: 1, multiple: false, apply_to: ['string']},
+        {type: 'NOT_MATCHES',      nb_inputs: 0, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
+        {type: 'MATCHES',      nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']}
     ],
 
     icons: {
