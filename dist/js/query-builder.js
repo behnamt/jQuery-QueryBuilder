@@ -259,7 +259,7 @@ QueryBuilder.DEFAULTS = {
         {type: 'NOT_CONTAINS',     nb_inputs: 1, multiple: false, apply_to: ['string']},
         {type: 'CONTAINS_PHRASE',        nb_inputs: 1, multiple: false, apply_to: ['string']},
         {type: 'NOT_CONTAINS_PHRASE',    nb_inputs: 1, multiple: false, apply_to: ['string']},
-        {type: 'NOT_MATCHES',      nb_inputs: 0, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
+        {type: 'NOT_MATCHES',      nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']},
         {type: 'MATCHES',      nb_inputs: 1, multiple: false, apply_to: ['string', 'number', 'datetime', 'boolean']}
     ],
 
